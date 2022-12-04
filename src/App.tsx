@@ -3,6 +3,7 @@ import './App.css'
 import Accordion from './components/Accordion/Accordion'
 import { Rating } from './components/Rating/Rating'
 import OnOff from "./components/OnOff/OnOff";
+import UncontrolledAccordion from "./components/UncControlledAccordion/Accordion";
 
 function sum(a: number, b: number) {
   debugger
@@ -14,15 +15,19 @@ function App(props: any) {
   console.log('App rendering')
 
   return (
-    <div>
+    <div className={"App"}>
 
-      <OnOff on={true}/>
+      <OnOff />
+
+
+        <UncontrolledAccordion titleValue={'Menu'}  />
+
+        {/*<OnOff on={true}/>*/}
+      {/*<OnOff on={false}/>*/}
       {/*<PageTitle title={'This is APP component'} />*/}
       {/*<PageTitle title={'My friends'} />*/}
       {/*Article 1*/}
       {/*<Rating value={3} />*/}
-      {/*<Accordion titleValue={'Menu'} collapsed={true} />*/}
-      {/*<Accordion titleValue={'Users'} collapsed={false} />*/}
 
       {/*  <Rating value={1}/>*/}
       {/*  <Rating value={2}/>*/}
