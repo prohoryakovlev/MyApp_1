@@ -18,7 +18,7 @@ function OnOff(props: PropsType) {
         border: "1px solid black",
         display: "inline-block",
         padding: "2px",
-        backgroundColor: on ? "green" : "while"
+        backgroundColor: on ? "green" : "white"
     }
     const offStyle = {
         width: "30px",
