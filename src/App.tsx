@@ -3,7 +3,8 @@ import './App.css'
 import Accordion from './components/Accordion/Accordion'
 import { Rating } from './components/Rating/Rating'
 import OnOff from "./components/OnOff/OnOff";
-import UncontrolledAccordion from "./components/UncControlledAccordion/Accordion";
+import UncontrolledAccordion from "./components/UncControlledAccordion/UncontrolledAccordion";
+import UncontrolledRating from "./components/UncontrollRating/UncontrolledRating";
 
 function sum(a: number, b: number) {
   debugger
@@ -20,28 +21,35 @@ function App(props: any) {
       <OnOff />
 
 
-        {/*<Accordion titleValue={'Menu'} collapsed={false}  />*/}
-        <UncontrolledAccordion titleValue={'Menu'}  />
+      <UncontrolledAccordion titleValue={'Menu'}  />
+      <Accordion titleValue={'Menu'} collapsed={false}  />
 
-        {/*<OnOff on={true}/>*/}
+
+      {/* eslint-disable-next-line react/jsx-no-undef */}
+      <UncontrolledRating />
+
+      <Rating value={3}/>
+
+
+      {/*<OnOff on={true}/>*/}
       {/*<OnOff on={false}/>*/}
       {/*<PageTitle title={'This is APP component'} />*/}
       {/*<PageTitle title={'My friends'} />*/}
       {/*Article 1*/}
-      {/*<Rating value={3} />*/}
+      {/*<UncontrolledRating value={3} />*/}
 
-      {/*  <Rating value={1}/>*/}
-      {/*  <Rating value={2}/>*/}
-      {/*  <Rating value={3}/>*/}
-      {/*  <Rating value={4}/>*/}
-      {/*  <Rating value={5}/>*/}
+      {/*  <UncontrolledRating value={1}/>*/}
+      {/*  <UncontrolledRating value={2}/>*/}
+      {/*  <UncontrolledRating value={3}/>*/}
+      {/*  <UncontrolledRating value={4}/>*/}
+      {/*  <UncontrolledRating value={5}/>*/}
 
-      {/*<Rating value={0} />*/}
-      {/*<Rating value={1} />*/}
-      {/*<Rating value={2} />*/}
-      {/*<Rating value={3} />*/}
-      {/*<Rating value={4} />*/}
-      {/*<Rating value={5} />*/}
+      {/*<UncontrolledRating value={0} />*/}
+      {/*<UncontrolledRating value={1} />*/}
+      {/*<UncontrolledRating value={2} />*/}
+      {/*<UncontrolledRating value={3} />*/}
+      {/*<UncontrolledRating value={4} />*/}
+      {/*<UncontrolledRating value={5} />*/}
     </div>
   )
 }
