@@ -8,22 +8,42 @@ type PropsType = {
 
 
 
-function OnOff(props: PropsType) {
+function OnOff(props: PropsType){
 
-    const onStyle = {}
-    const offStyle = {}
-    const indicatorStyle = {
+    const onStyle = {
         width: "30px",
-        height: "30px",
-        borderRadius: "15px",
-        border: "1px solid black"
+        height: "20px",
+        border: "1px solid black",
+        display: "inline-block",
+        padding: "2px",
+        backgroundColor: props.on ? "green" : "while"
+    }
+    const offStyle = {
+        width: "30px",
+        height: "20px",
+        border: "1px solid black",
+        display: "inline-block",
+        marginLeft: "5px",
+        padding: "2px",
+        backgroundColor: "red"
+
+    }
+    const indicatorStyle = {
+        width: "10px",
+        height: "10px",
+        borderRadius: "5px",
+        border: "1px solid black",
+        display: "inline-block",
+        marginLeft: "5px",
+        backgroundColor: "red"
+
     }
 
 
     return (
         <div>
-            <div></div>
-            <div></div>
+            <div style={onStyle}>On</div>
+            <div style={offStyle}>Off</div>
             <div style={indicatorStyle}></div>
         </div>
     )
